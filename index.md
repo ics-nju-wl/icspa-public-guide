@@ -132,3 +132,5 @@ PA 4-1对应课本第7章：异常控制流；PA 4-2对应课本第8章：I/O操
 [附录A. I386手册勘误](ch/ch_appendix_A_i386_correction.md)
 
 [附录B. Git入门教程](ch/ch_appendix_B_git_manual.md)
+
+[附录C. 安装Debian操作系统的图片示意](ch/ch_appendix_C_local_vm.md)

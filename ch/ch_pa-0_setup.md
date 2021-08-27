@@ -22,7 +22,7 @@ https://www.debian.org/distrib/netinst
 
 选择Small CDs or USB sticks项下的i386体系结构镜像，按照说明进行安装，语言选择为US English。为了将来运行的方便，在安装过程中，推荐安装桌面环境。框架代码的测试环境为MATE桌面系统，这是老的Gnome 2的一个分支，比较符合一些老用户的使用习惯，你也可以尝试使用其他的桌面环境（比如xfce）。以MATE为例，在图形化的桌面环境中，命令行终端可以通过`Applications -> System Tools -> MATE Terminal`打开。
 
-本实验指导在“`附录C. 安装Debian操作系统的图片示意`”中提供了完整的安装过程示意图。
+本实验指导在 [附录C. 安装Debian操作系统的图片示意](../ch/ch_appendix_C_local_vm.md) 中提供了完整的安装过程示意图。
 
 ### Step 1.2. 配置客户操作系统
 
