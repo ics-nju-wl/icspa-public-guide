@@ -29,8 +29,11 @@ https://www.debian.org/distrib/netinst
 在操作系统安装完毕后，需要进行的第一个操作是将当前用户加入到sudoer list。所需要进行的具体操作步骤为：
 
 > username@debian:~$ su - root
+> 
 > Password: <input your password>
+> 
 > root@debian:/home/username# adduser username sudo
+> 
 > root@debian:/home/username# exit
 
 完成上述操作后，`Log Out`系统并再次登入，就可以在普通用户的身份下使用`sudo cmd`的方式执行特权命令了。
@@ -48,6 +51,7 @@ https://www.debian.org/distrib/netinst
 在安装之前，需要额外安装编译环境和Linux头文件包通过执行以下命令来安装相应的依赖（具体版本号可能会发生变化）
 
 > sudo apt-get install linux-headers-4.9.0-3-all-i386 net-tools
+> 
 > sudo apt-get install build-essential
 
 安装好必要的依赖后，将vmware-tools光盘中的`VMwareTools-version-num.tar.gz`压缩包拷贝出来并解压，在解压得到的目录下执行命令
