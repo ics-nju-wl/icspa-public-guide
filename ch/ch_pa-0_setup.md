@@ -30,7 +30,7 @@ https://www.debian.org/distrib/netinst
 
 > username@debian:~$ su - root
 > 
-> Password: <input your password>
+> Password: \<input your password\>
 > 
 > root@debian:/home/username# adduser username sudo
 > 
