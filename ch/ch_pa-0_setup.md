@@ -84,6 +84,10 @@ PA实验使用`GNU/Linux`平台开展实验，项目代码使用C语言编写并
 
 > git clone https://github.com/ics-nju-wl/icspa-public.git
 
+或者克隆镜像地址（速度可能更快）：
+
+> git clone https://gitee.com/wlicsnju/icspa-public.git
+
 在获取成功后，会在当前目录下创建名为icspa-public的文件夹，其中包含了PA的框架代码和教程。
 
 ### Step 3.2. 配置学号
