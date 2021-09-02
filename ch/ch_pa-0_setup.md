@@ -46,7 +46,7 @@ https://www.debian.org/distrib/netinst
 
 来安装sudo。
 
-安装完操作系统后，推荐继续安装VMware提供的`vmware-tools`。`vmware-tools`针对客户操作系统提供了一些很方便的功能，如自适应调整分辨率、共享文件夹等。在安装过程中VMware Player就会提示下载安装。`vmware-tools`镜像下载完成后，在VMware Player的菜单中选择`install vmware tools...`，就可以看到在客户操作系统中挂载了一个光盘驱动器，其中就包含`vmware-tools`的安装文件。
+安装完操作系统后，推荐继续安装VMware提供的`vmware-tools`。此时有两个选择，一个是使用`vmware-tools`，另一个则是使用`open-vm-tools`。
 
 在安装之前，需要额外安装编译环境和Linux头文件包通过执行以下命令来安装相应的依赖（具体版本号可能会发生变化）
 
@@ -54,13 +54,25 @@ https://www.debian.org/distrib/netinst
 > 
 > sudo apt-get install build-essential
 
+**选择1：安装`vmware-tools`**
+
+`vmware-tools`针对客户操作系统提供了一些很方便的功能，如自适应调整分辨率、共享文件夹等。在安装过程中VMware Player就会提示下载安装。`vmware-tools`镜像下载完成后，在VMware Player的菜单中选择`install vmware tools...`，就可以看到在客户操作系统中挂载了一个光盘驱动器，其中就包含`vmware-tools`的安装文件。
+
 安装好必要的依赖后，将vmware-tools光盘中的`VMwareTools-version-num.tar.gz`压缩包拷贝出来并解压，在解压得到的目录下执行命令
 
 > sudo ./vmware-install.pl
 
 在第一步可能会提示是否安装`open-vm-tools`，<font color=red>请忽略</font>，并坚持安装`vmware-tools`。如果没有遇到其他问题，一路选择默认选项即可。在完成安装之后，你将获得包括屏幕分辨率自动调整、与宿主系统共享剪贴板、共享文件夹等功能，有助于更方便地使用客户操作系统的功能。
 
-你可以在宿主系统中创建一个文件夹，并在vmware软件菜单中通过`Virtual Machine Settings -> Options -> Shared Folders`页面指定创建的文件夹为共享文件夹，在客户系统中共享文件夹位于`/mnt/hgfs/`目录下。有了共享文件夹，就可以方便地在虚拟机和宿主机之间传递文件了。
+**选择2：安装`open-vm-tools`（更简单一点）**
+
+在安装好依赖之后，执行：
+
+> sudo apt-get install open-vm-tools
+
+> sudo apt-get install open-vm-tools-desktop
+
+在安装完上面任意一款增强工具后，你可以在宿主系统中创建一个文件夹，并在vmware软件菜单中通过`Virtual Machine Settings -> Options -> Shared Folders`页面指定创建的文件夹为共享文件夹，在客户系统中共享文件夹位于`/mnt/hgfs/`目录下。有了共享文件夹，就可以方便地在虚拟机和宿主机之间传递文件了。
 
 ## 步骤2. 安装必要的软件
 
