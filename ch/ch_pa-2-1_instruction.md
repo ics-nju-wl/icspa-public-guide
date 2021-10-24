@@ -277,7 +277,7 @@ int mov_i2r_b(uint32_t eip, uint8_t opcode);
 
 ##### * OPERAND数据结构及其读写操作封装
 
-NEMU中所有的操作数都封装在一个叫做`OPERAND`的数据结构中。该数据结构的声明在头文件`nemu/include/cpu/operand.h`中。仔细阅读该头文件，理解其中每个字段的含义，具体内容本教程不再赘述。针对`OPERAND`，有两个主要的方法来封装操作数的读写操作，分别为：
+NEMU中所有的操作数都封装在一个叫做`OPERAND`的数据结构中。该数据结构的声明在头文件`nemu/include/cpu/decode/operand.h`中。仔细阅读该头文件，理解其中每个字段的含义，具体内容本教程不再赘述。针对`OPERAND`，有两个主要的方法来封装操作数的读写操作，分别为：
 
 ```c
 void operand_read(OPERAND *opr);
