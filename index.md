@@ -20,6 +20,13 @@
 
 - 请勿抄袭，也不要将你自己的代码放在公开的仓库中！
 
+- i386手册: http://css.csail.mit.edu/6.858/2014/readings/i386.pdf
+
+- x86及x87指令集（包含手册上没有的指令）: http://www.felixcloutier.com/x86/
+
+- Intel® 64 and IA-32 Architectures Software Developer’s Manual, Volume 1: Basic Architecture
+  http://software.intel.com/en-us/articles/intel-sdm
+
 ----------------------------------------------------------------
 
 ## PA 0 搭建并熟悉实验环境
