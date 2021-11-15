@@ -25,6 +25,7 @@
 - x86及x87指令集（包含手册上没有的指令）: http://www.felixcloutier.com/x86/
 
 - Intel® 64 and IA-32 Architectures Software Developer’s Manual, Volume 1: Basic Architecture
+  
   http://software.intel.com/en-us/articles/intel-sdm
 
 ----------------------------------------------------------------
