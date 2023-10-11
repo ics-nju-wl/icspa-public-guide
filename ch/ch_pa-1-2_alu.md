@@ -31,9 +31,6 @@ uint32_t alu_adc(uint32_t src,  uint32_t dest, sizt_t data_size);
 uint32_t alu_sub(uint32_t src,  uint32_t dest, sizt_t data_size);
 
 // 返回 dest - src - CF，截取低 data_size 位，高位置零，并设置各标志位
-uint32_t alu_sub(uint32_t src,  uint32_t dest, sizt_t data_size);
-
-// 返回 dest - src - CF，截取低 data_size 位，高位置零，并设置各标志位
 uint32_t alu_sbb(uin32_t src,  uint32_t dest, sizt_t data_size);
 ```
 

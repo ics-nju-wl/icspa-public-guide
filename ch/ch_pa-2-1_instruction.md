@@ -305,9 +305,9 @@ int mov_i2r_b(uint32_t eip, uint8_t opcode) {
     imm.addr = eip + 1;    // 配置源操作数地址
     imm.data_size = 8;     // 配置源操作数长度
     
-    r.data_size = 8;        // 配置目的操作数类型
+    r.data_size = 8;        // 配置目的操作数长度
     r.type = OPR_REG;       // 配置目的操作数类型
-    r.addr = opcode & 0x7;  // 配置目的操作数类型
+    r.addr = opcode & 0x7;  // 配置目的操作数地址
     
     operand_read(&imm);   // 读源操作数的值
     r.val = imm.val;      // 将源操作数的值赋给目的操作数
